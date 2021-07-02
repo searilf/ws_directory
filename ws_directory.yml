@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  
+  tasks:
+    - name: Creating a new directory
+      file:
+        path: "/etc//Workshop"
+        state: directory
